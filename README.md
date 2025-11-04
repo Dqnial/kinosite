@@ -1,12 +1,55 @@
-# React + Vite
+# 🎬 KinoSite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Приложение, в котором можно смотреть фильмы, сериалы, мультфильмы и аниме.  
+Мини-клон **Кинопоиска**, созданный с использованием **React**, **Redux Toolkit**, **MUI** и **Vite**.  
+Данные подгружаются через неофициальный API Кинопоиска.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Демо
 
-## Expanding the ESLint configuration
+🔗 **https://dqnial.github.io/kinosite/**  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Основные возможности
+
+- 🔍 Поиск фильмов, сериалов, мультфильмов и аниме  
+- 🎞️ Просмотр информации о фильме: постер, описание, рейтинг, жанры
+- 💻 Просмотр фильмов
+- 📱 Адаптивный дизайн (работает на телефоне и ПК)  
+- 🧭 Навигация через **React Router v7**  
+- 🗃️ Глобальное состояние с **Redux Toolkit**
+
+---
+
+## 🧰 Технологии
+
+### 🖥️ Frontend
+- **React 19** — основа приложения  
+- **React Router DOM 7** — маршрутизация между страницами  
+- **Redux Toolkit** — управление глобальным состоянием  
+- **Material UI (MUI)** — UI-компоненты  
+- **Emotion** — стилизация компонентов  
+
+### ⚙️ Сборка и разработка
+- **Vite** — современный сборщик для быстрого старта и дев-сервера  
+- **ESLint + Prettier** — линтинг и автоформатирование кода  
+
+### ☁️ Хостинг
+- **GitHub Pages** — публикация и хостинг проекта  
+
+### 🎥 API
+- **Неофициальный API Кинопоиска** — получение данных о фильмах и сериалах  
+
+---
+
+## ⚙️ Установка и запуск проекта
+
+1. Установите зависимости:
+npm install
+
+2. Запустите сервер в режиме разработки:
+npm run dev
+
+3. После запуска сервер будет доступен по адресу: http://localhost:5173
