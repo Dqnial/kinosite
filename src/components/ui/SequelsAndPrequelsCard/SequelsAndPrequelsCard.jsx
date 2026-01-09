@@ -6,8 +6,8 @@ import styles from '../MovieCard/MovieCard.module.css';
 
 export default function SequelsAndPrequelsCard({ movie, reload = false }) {
    const linkProps = reload
-      ? { component: 'a', href: `/kinosite/movie/${movie.filmId}` }
-      : { component: RouterLink, href: `/kinosite/movie/${movie.filmId}` };
+      ? { component: 'a', href: `/movie/${movie.filmId}` }
+      : { component: RouterLink, href: `/movie/${movie.filmId}` };
 
    return (
       <Stack>

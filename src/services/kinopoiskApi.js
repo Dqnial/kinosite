@@ -3,9 +3,9 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export const kinopoiskApi = createApi({
    reducerPath: 'kinopoiskApi',
    baseQuery: fetchBaseQuery({
-      baseUrl: 'https://kinopoiskapiunofficial.tech/api',
+      baseUrl: import.meta.env.VITE_API_URL,
       prepareHeaders: (headers) => {
-         headers.set('X-API-KEY', 'd26e9822-daf8-4341-a450-fa422613acda'); // acbd7803-8d3f-40f7-b1f6-81c173ff4ab9
+         headers.set('X-API-KEY', import.meta.env.VITE_KINOPOISK_KEY1);
          headers.set('Content-Type', 'application/json');
       },
    }),

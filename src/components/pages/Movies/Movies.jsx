@@ -1,5 +1,6 @@
-import { Container, Link, Stack } from '@mui/material';
+import { Box, Container, Link, Stack } from '@mui/material';
 import BearCarousel, { BearSlideImage } from 'bear-react-carousel';
+import 'bear-react-carousel/dist/index.css';
 import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 
@@ -24,10 +25,13 @@ export default function Movies() {
 
    const serializeDataForCarousel = (data) =>
       data.map((row) => (
-         <BearSlideImage
-            key={row.id}
-            imageUrl={row.posterUrlPreview}
-         ></BearSlideImage>
+         <RouterLink
+            key={row.kinopoiskId || row.filmId}
+            to={`/movie/${row.kinopoiskId || row.filmId}`}
+            style={{ display: 'block' }}
+         >
+            <BearSlideImage imageUrl={row.posterUrlPreview} />
+         </RouterLink>
       ));
 
    const carouselArray = [

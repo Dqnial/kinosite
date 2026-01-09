@@ -238,7 +238,7 @@ export default function MovieDetail() {
             </Grid>
          </Grid>
          <Grid container>
-            <VideoPlayer title={responseFilm.data.nameRu} />
+            <VideoPlayer kinopoiskId={responseFilm.data.kinopoiskId} />
          </Grid>
          {responseSequelsAndPrequels.data && (
             <Stack>
