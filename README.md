@@ -6,7 +6,7 @@
 
 ## 🚀 Демо
 
-🔗 **https://dqnial.github.io/kinosite/**  
+🔗 **https://kinosite-ten.vercel.app**  
 
 ## ✨ Основные возможности
 
